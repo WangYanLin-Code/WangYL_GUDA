@@ -1,17 +1,7 @@
-# WangYL_GUDA
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/WangYanLin-Code/WangYL_GUDA/blob/master/40po031d_0.19995_01go0307_-0.19995.wav" type="audio/wav">
-
-</audio>
 
 
-<audio controls>
-  <source src="https://raw.githubusercontent.com/WangYanLin-Code/WangYL_GUDA/blob/master/audio-3.wav" type="audio/wav">
+## 语音示例
 
-</audio>
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/WangYanLin-Code/WangYL_GUDA/blob/master/audio-4.wav" type="audio/wav">
-
-</audio>
+- [播放 audio-3.wav](https://raw.githubusercontent.com/WangYanLin-Code/WangYL_GUDA/master/audio-3.wav)  
+- [播放 audio-4.wav](https://raw.githubusercontent.com/WangYanLin-Code/WangYL_GUDA/master/audio-4.wav)
+- [播放 40po031d_0.19995_01go0307_-0.19995.wav](https://raw.githubusercontent.com/WangYanLin-Code/WangYL_GUDA/master/40po031d_0.19995_01go0307_-0.19995.wav)
