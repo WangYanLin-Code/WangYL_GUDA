@@ -2,33 +2,92 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>Conv-TasNet 音频分离演示</title>
+  <title>语音分离效果对比展示</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .column {
+      flex: 1;
+    }
+
+    audio {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h2>Conv-TasNet 语音分离结果</h2>
+  <div class="container">
+    <!-- 左侧：Conv-TasNet -->
+    <div class="column">
+      <h2>Conv-TasNet 语音分离结果</h2>
 
-  <p><strong>分离后男生语音：</strong></p>
-  <audio controls>
-    <source src="audio-3.wav" type="audio/wav">
-    您的浏览器不支持音频播放。
-  </audio>
-  <br>
-  <img src="man.png" alt="男声频谱图" width="400">
+      <p><strong>分离后男生语音：</strong></p>
+      <audio controls>
+        <source src="audio-3.wav" type="audio/wav">
+        您的浏览器不支持音频播放。
+      </audio>
+      <img src="1.png" alt="男声频谱图">
 
-  <p><strong>分离后女生语音：</strong></p>
-  <audio controls>
-    <source src="audio-4.wav" type="audio/wav">
-    您的浏览器不支持音频播放。
-  </audio>
-  <br>
-  <img src="woman.png" alt="女声频谱图" width="400">
+      <p><strong>分离后女生语音：</strong></p>
+      <audio controls>
+        <source src="audio-4.wav" type="audio/wav">
+        您的浏览器不支持音频播放。
+      </audio>
+      <img src="2.png" alt="女声频谱图">
 
-  <p><strong>原始男女混合音频：</strong></p>
-  <audio controls>
-    <source src="40po031d_0.19995_01go0307_-0.19995.wav" type="audio/wav">
-    您的浏览器不支持音频播放。
-  </audio>
-  <br>
-  <img src="2mix.png" alt="混合音频频谱图" width="400">
+      <p><strong>原始混合音频：</strong></p>
+      <audio controls>
+        <source src="40po031d_0.19995_01go0307_-0.19995.wav" type="audio/wav">
+        您的浏览器不支持音频播放。
+      </audio>
+      <img src="3.png" alt="混合音频频谱图">
+    </div>
+
+    <!-- 右侧：MossFormer -->
+    <div class="column">
+      <h2>MossFormer 分离效果展示</h2>
+
+      <p><strong>分离后男1语音：</strong></p>
+      <audio controls>
+        <source src="audio-5.wav" type="audio/wav">
+        您的浏览器不支持音频播放。
+      </audio>
+      <img src="man1-5.png" alt="男声频谱图（MossFormer）">
+
+      <p><strong>分离后男2语音：</strong></p>
+      <audio controls>
+        <source src="audio-6.wav" type="audio/wav">
+        您的浏览器不支持音频播放。
+      </audio>
+      <img src="max2-6.png" alt="男2（MossFormer）">
+
+      <p><strong>原始混合音频：</strong></p>
+      <audio controls>
+        <source src="test-clean-2mix-0000.wav" type="audio/wav">
+        您的浏览器不支持音频播放。
+      </audio>
+      <img src="2man-mix.png" alt="两个男性混合音频频谱图（MossFormer）">
+    </div>
+  </div>
 </body>
 </html>
